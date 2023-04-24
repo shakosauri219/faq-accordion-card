@@ -1,0 +1,171 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 327px;
+    margin-top: 148px;
+    margin-bottom: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat; 
+    height: 145px;
+    width: 240px;
+}
+
+.desktop {
+    display: none;
+}
+
+.box {
+    display: none;
+}
+
+.image .mobile {
+    width: 237px;
+    height: 180px;
+    position: absolute;
+    top: -108px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px
+}
+
+.content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin-bottom: 40px;
+}
+
+.question {
+    border-bottom: 1px solid #E8E8EA;
+    padding-bottom: 19px;
+}
+
+.question-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-text img {
+    width: 10px;
+    height: 7px;
+}
+
+.question-text img:hover {
+    cursor: pointer;
+}
+
+.question {
+    width: 279px;
+    margin-bottom: 19px;
+}
+
+.question-text:hover {
+    color: #F47B56;
+    cursor: pointer;
+}
+
+.answer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    display: none;
+    margin-top: 13px;
+}
+
+.support {
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        flex-direction: row;
+        width: auto;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 964px 944px;
+        background-position: top -294px left -576px;
+        padding-right: 60px;
+        position: relative;
+        justify-content: space-between;
+        width: 59%;
+    }
+
+    .box {
+        display: unset;
+        position: absolute;
+        left: -93px;
+        top: 216px;
+        z-index: 2;
+    }
+
+    .image {
+        width: 100%;
+        height: 400px;
+        background-image: none;
+        position: relative;
+        overflow-x: hidden;
+        max-height: 384px;
+    }
+
+    .desktop {
+        display: unset;
+        position: absolute;
+        left: -86px;
+        top: 0px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .content {
+        padding: 0px;
+        margin-right: 70px;
+        padding: 65px 0px;
+    }
+
+    .content h1 {
+        align-self: flex-start;
+    }
+}
+
+
+
+
+
+
+
