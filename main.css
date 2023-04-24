@@ -113,7 +113,6 @@ body {
 @media screen and (min-width:1440px) {
     .container {
         flex-direction: row;
-        width: auto;
         background-image: url(./images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-size: 964px 944px;
@@ -122,6 +121,7 @@ body {
         position: relative;
         justify-content: space-between;
         width: 59%;
+        height: auto;
     }
 
     .box {
@@ -134,18 +134,17 @@ body {
 
     .image {
         width: 100%;
-        height: 400px;
+        height: 509px;
         background-image: none;
         position: relative;
         overflow-x: hidden;
-        max-height: 384px;
     }
 
     .desktop {
         display: unset;
         position: absolute;
         left: -86px;
-        top: 0px;
+        top: 80px;
     }
 
     .mobile {
@@ -155,7 +154,11 @@ body {
     .content {
         padding: 0px;
         margin-right: 70px;
-        padding: 65px 0px;
+        height: 509px;
+    }
+
+    .content h1 {
+        margin-top: 65px;
     }
 
     .content h1 {

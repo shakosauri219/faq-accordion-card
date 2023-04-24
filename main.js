@@ -17,6 +17,7 @@ question.forEach((quest) => {
             questionText.style.color = 'black';
             questionText.style.fontWeight = '700';
         }
+
     })
 })
 
